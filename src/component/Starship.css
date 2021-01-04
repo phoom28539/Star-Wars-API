@@ -1,0 +1,45 @@
+.s-title {
+    font-size: 30px;
+}
+
+.each-row {
+    /* border :solid  #9C9C9C; */
+    margin :6px;
+    padding: 12px;
+    border-radius: 5px;
+    border-width: 0.5px;
+    box-shadow:1px 1px 15px 2px  #e4e4e4;
+}
+
+.s-name {
+    font-weight: 700;
+}
+.right-container{
+    float: right;
+}
+
+.space {
+    /* padding-left: 50px; */
+    color: #9C9C9C;
+    font-weight: 500;
+}
+.s-cost {
+    color: #9C9C9C;
+    font-weight: 500;
+    
+}
+.s-epi{
+    color: #9C9C9C;
+    font-weight: 500;
+    
+    
+}
+
+.link-seemore{
+    padding-top: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.link-seemore a{   
+    color: #9C9C9C;
+}

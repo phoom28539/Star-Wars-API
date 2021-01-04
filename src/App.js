@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import People from'./component/People'
+import Starship from './component/Starship'
+import React,{useState} from 'react'
 
 function App() {
+
+  const [input, setInput] = useState('');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title">Star Wars API</h1>
+      <center><input className="Input" type='text' value={input} placeholder='search name' onChange={e => setInput(e.target.value)}></input></center>
+      <People search={input}/>
+      <Starship search={input}/>
     </div>
   );
 }
